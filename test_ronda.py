@@ -1,8 +1,8 @@
-import unittest
+import pytest
 from ronda import ronda
 from jugador import jugador
 
-class TestRonda(unittest.TestCase):
+class TestRonda(pytest):
 
     def test_agregarJugador_funciona_correctamente(self):
         ronda = ronda()
@@ -59,5 +59,3 @@ class TestRonda(unittest.TestCase):
         ronda.agregarJugador(jugador2)
         self.assertEqual(str(ronda), f"{jugador1}\n{jugador2}")
 
-if __name__ == '__main__':
-    unittest.main()

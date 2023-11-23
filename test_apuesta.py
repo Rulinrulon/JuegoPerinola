@@ -1,7 +1,7 @@
-import unittest
+import pytest
 from apuesta import apuesta
 
-class TestApuesta(unittest.TestCase):
+class TestApuesta(pytest):
 
     def test_ponerFicha_agrega_correctamente(self):
         apuesta = apuesta()
@@ -38,5 +38,3 @@ class TestApuesta(unittest.TestCase):
         apuesta.ponerFicha(5)
         self.assertEqual(str(apuesta), "Apuesta: 5 fichas")
 
-if __name__ == '__main__':
-    unittest.main()

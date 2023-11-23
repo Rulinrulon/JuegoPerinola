@@ -1,7 +1,7 @@
-import unittest
+import pytest
 from jugador import jugador
 
-class TestJugador(unittest.TestCase):
+class TestJugador(pytest):
     
     def test_darFicha_agrega_correctamente(self):
         jugador = jugador("Franco", 8)
@@ -28,5 +28,3 @@ class TestJugador(unittest.TestCase):
         jugador = jugador("Martina", 7)
         self.assertEqual(str(jugador), "Martina, 7 fichas")
 
-if __name__ == '__main__':
-    unittest.main()
